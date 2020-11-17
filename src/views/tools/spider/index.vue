@@ -6,9 +6,9 @@
         <el-select v-model="query.name" clearable placeholder="请选择" class="filter-item" @keyup.enter.native="crud.toQuery">
           <el-option
             v-for="item in sources"
-            :key="item.id"
-            :label="item.source"
-            :value="item.source"
+            :key="item"
+            :label="item"
+            :value="item"
           />
         </el-select>
         <rrOperation />
